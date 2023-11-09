@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_example/widgets/login_textfield_widget.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -8,6 +9,12 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  // states
+  // login information
+  // id, pw
+  var userId = '';
+  var password = '';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +22,7 @@ class _LoginScreenState extends State<LoginScreen> {
         centerTitle: true,
         backgroundColor: Colors.amber,
         title: Text(
-          'Login App',
+          'Dice App',
           style: TextStyle(
             color: Colors.black,
           ),
@@ -27,13 +34,54 @@ class _LoginScreenState extends State<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              'Dice App',
-              style: TextStyle(
-                color: Colors.black,
-              ),
+            CircleAvatar(),
+            SizedBox(
+              height: 50,
             ),
-            Text('로그인을 해주세요'),
+            LoginTextFieldWidget(
+              hintText: '아이디를 입력해주세요',
+              labelText: 'ID',
+              onChanged: (value) {
+                setState(() {
+                  userId = value;
+                });
+              },
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            LoginTextFieldWidget(
+              hintText: '패스워드를 입력해주세요',
+              labelText: 'PW',
+              onChanged: (value) {
+                setState(() {
+                  password = value;
+                });
+              },
+            ),
+            SizedBox(
+              height: 32,
+            ),
+            SizedBox(
+              width: 400,
+              height: 50,
+              child: ElevatedButton(
+                onPressed: () {
+                  // print('${userId} : ${password}');
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) {
+                  //       return Container();
+                  //     },
+                  //   ),
+                  // );
+                },
+                child: Text(
+                  '로그인',
+                ),
+              ),
+            )
           ],
         ),
       ),
