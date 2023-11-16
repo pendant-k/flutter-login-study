@@ -3,9 +3,9 @@
 ### 실습의 목적 
 로그인 페이지와 주사위 페이지로 구성된 스터디용 자료입니다. 이번 스터디 과제는 다음의 주제들을 포함합니다. 과제를 진행하면서 다음의 내용들을 익혀볼 예정입니다.
 - Navigation 
-- setState
+- setState()
 - asset 사용
-- Lottie
+- Lottie 파일 활용
 - AfterLayout Package
 
 ### 실습 안내
@@ -29,3 +29,13 @@
 <img width="300" alt="dice_screen" src="https://github.com/pendant-k/flutter-login-study/assets/54224868/156e2d06-dc3d-40a1-95e7-80d65d44c633">
 
 <img width="300" alt="dice_dialog" src="https://github.com/pendant-k/flutter-login-study/assets/54224868/5dba355d-0b2a-4b28-8c10-bab46ae04ae0">
+
+### 참고 자료
+- Lottie는 Animation 파일 형식입니다. json 파일 확장자로 gif 파일처럼 애니메이션을 어플리케이션에 넣을 때 활용합니다.
+gif 파일보다 용량이 낮아서 다양한 애니메이션을 부담없이 어플리케이션에 적용할 수 있습니다.
+(Lottie 공식페이지)[https://airbnb.io/lottie/#/]
+Flutter에서는 lottie 파일을 사용하기 위해 Lottie 패키지가 필요합니다.
+(Flutter Lottie 패키지)[https://pub.dev/packages/lottie]
+
+- AfterLayout Package를 사용하면 특정 위젯이 로딩된 이후 곧바로 필요한 함수를 실행할 수 있습니다. 이를 활용해서 로그인 이후 주사위 페이지로 이동하면 바로 Dialog가 출력되도록 구현해볼 수 있습니다. (주의: `initState()` 내에서 `showDialog()`를 사용하면 에러가 발생합니다)
+(Flutter AfterLayout Package)[https://pub.dev/packages/after_layout]
