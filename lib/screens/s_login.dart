@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_example/screens/s_dice.dart';
 import 'package:login_example/widgets/login_textfield_widget.dart';
 import 'package:lottie/lottie.dart';
 
@@ -74,14 +75,16 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 50,
               child: ElevatedButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (context) {
-                  //       return Container();
-                  //     },
-                  //   ),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return DiceScreen(
+                          id: userId,
+                        );
+                      },
+                    ),
+                  );
                 },
                 child: Text(
                   '로그인',
