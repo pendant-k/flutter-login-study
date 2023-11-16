@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:login_example/screens/s_dice.dart';
-import 'package:login_example/widgets/login_textfield_widget.dart';
-import 'package:lottie/lottie.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -32,68 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
         ),
       ),
-      body: Container(
-        width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Lottie.asset(
-              'assets/animations/cat.json',
-              width: 300,
-              height: 300,
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            LoginTextFieldWidget(
-              hintText: '아이디를 입력해주세요',
-              labelText: 'ID',
-              onChanged: (value) {
-                setState(() {
-                  userId = value;
-                });
-              },
-            ),
-            SizedBox(
-              height: 16,
-            ),
-            LoginTextFieldWidget(
-              hintText: '패스워드를 입력해주세요',
-              labelText: 'PW',
-              onChanged: (value) {
-                setState(() {
-                  password = value;
-                });
-              },
-            ),
-            SizedBox(
-              height: 32,
-            ),
-            SizedBox(
-              width: 400,
-              height: 50,
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) {
-                        return DiceScreen(
-                          id: userId,
-                        );
-                      },
-                    ),
-                  );
-                },
-                child: Text(
-                  '로그인',
-                ),
-              ),
-            )
-          ],
-        ),
-      ),
+      body: Placeholder(),
     );
   }
 }
