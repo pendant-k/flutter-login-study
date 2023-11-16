@@ -24,3 +24,4 @@
 - ID/PW 둘중 하나가 입력되지 않았다면 Dialog/Snackbar/Toast를 띄워서 ID/PW를 입력해달라는 메세지를 출력할 수 있습니다.
 
 ### 구현 예제
+<img width="300" alt="login_screen" src="https://github.com/pendant-k/flutter-login-study/assets/54224868/65950c67-b527-4d69-9be4-08d339d75759">
