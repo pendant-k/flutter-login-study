@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_example/widgets/login_textfield_widget.dart';
+import 'package:lottie/lottie.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -25,6 +26,8 @@ class _LoginScreenState extends State<LoginScreen> {
           'Dice App',
           style: TextStyle(
             color: Colors.black,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
@@ -34,7 +37,11 @@ class _LoginScreenState extends State<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            CircleAvatar(),
+            Lottie.asset(
+              'assets/animations/cat.json',
+              width: 300,
+              height: 300,
+            ),
             SizedBox(
               height: 50,
             ),
@@ -67,7 +74,6 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 50,
               child: ElevatedButton(
                 onPressed: () {
-                  // print('${userId} : ${password}');
                   // Navigator.push(
                   //   context,
                   //   MaterialPageRoute(

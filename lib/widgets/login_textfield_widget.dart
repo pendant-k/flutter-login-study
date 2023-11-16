@@ -35,3 +35,17 @@ class LoginTextFieldWidget extends StatelessWidget {
     );
   }
 }
+
+class ContainerWidget extends StatelessWidget {
+  const ContainerWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 100,
+      child: Row(
+        children: [ElevatedButton(onPressed: () {}, child: Text(''))],
+      ),
+    );
+  }
+}
