@@ -25,3 +25,7 @@
 
 ### 구현 예제
 <img width="300" alt="login_screen" src="https://github.com/pendant-k/flutter-login-study/assets/54224868/65950c67-b527-4d69-9be4-08d339d75759">
+
+<img width="300" alt="dice_screen" src="https://github.com/pendant-k/flutter-login-study/assets/54224868/156e2d06-dc3d-40a1-95e7-80d65d44c633">
+
+<img width="300" alt="dice_dialog" src="https://github.com/pendant-k/flutter-login-study/assets/54224868/5dba355d-0b2a-4b28-8c10-bab46ae04ae0">
