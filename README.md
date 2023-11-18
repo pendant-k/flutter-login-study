@@ -13,6 +13,7 @@
 - 폴더 구조는 간단하게 screens, widgets으로 구성됩니다.
 - 기본적으로 screen 파일들이 있으니 screen 파일부터 과제를 시작하면 됩니다.
 - 강요되는 구조나 사용해야하는 위젯에는 제한이 없으니 자유롭게 원하는대로 구현해주세요.
+- 작업 중 구현하는 위젯들은 분리해서 각각 위젯 파일들로 관리해보는 것을 추천합니다.
 
 ### 구현 내용
 - login 페이지를 만들고 ID,PW를 사용자로부터 입력받은 뒤 Dice 페이지로 이동하는 코드를 구현합니다.
@@ -22,6 +23,7 @@
 ### 추가 구현(옵션)
 - 유저가 ID/PW를 입력하고 Dice 페이지로 이동하면 Dialog를 열어서 환영 메세지를 출력합니다.
 - ID/PW 둘중 하나가 입력되지 않았다면 Dialog/Snackbar/Toast를 띄워서 ID/PW를 입력해달라는 메세지를 출력할 수 있습니다.
+- Dice 페이지 내에서 로그아웃 기능을 추가합니다(뒤로가기 + 기존 데이터 초기화(TextField)
 
 ### 구현 예제
 <img width="300" alt="login_screen" src="https://github.com/pendant-k/flutter-login-study/assets/54224868/65950c67-b527-4d69-9be4-08d339d75759">
